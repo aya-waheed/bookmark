@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Oswald:wght@500&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Oswald:wght@500&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+   <div class="bookmarking">
+
+    <div class="container">
+          
+        <h1 class="text-center py-4">Bookmarker</h1>
+
+
+        <div class="text-center">
+
+            ..........................................................................................................................................................................................................................................................................................................................................................
+        </div>
+
+        <div class="bookmarking-body py-5">
+
+            <div class="title d-flex justify-content-center align-items-center">
+                
+                <div class="icon1">  <i class="fa-solid fa-bookmark"></i>   </div>
+
+                <div class="book-title px-1">
+                    <h2> Bookmark your favorite sites </h2>
+
+                </div>
+
+                <div class="icon2">  <i class="fa-solid fa-bookmark"></i>   </div>
+
+
+            </div>
+            
+            <div class="bookmark-input my-4">
+
+                <label class="fw-bold" for="siteNameInput"> <i class="fa-solid fa-book-bookmark"></i> Site Name : </label>
+                <input oninput="validationName()"  class="form-control my-2" type="text" id="siteNameInput" placeholder="Bookmark Name">
+    
+            </div>
+
+             
+            <div class="bookmark-input my-4">
+
+                <label class="fw-bold" for="siteUrlInput"> <i class="fa-solid fa-link"></i> Site URL : </label>
+                <input oninput="validationUrl()"  class="form-control my-2" type="text" id="siteUrlInput" placeholder="Website URL">
+    
+            </div>
+
+            <div class="btnn d-flex justify-content-center align-items-center">
+
+                <button onclick=" sumbit()" class="rounded">Sumbit</button>
+                
+                <button id="hiddenButton" data-bs-toggle="modal" data-bs-target="#exampleModal"  class="rounded d-none ">Sumbit</button>
+
+
+
+            </div>
+
+
+            <div class="text-center">
+
+                ..........................................................................................................................................................................................................................................................................................................................................................
+            </div>
+
+
+
+            <table class="table my-5 text-center">
+
+                <thead>
+        
+                    <tr>
+                        <th>Index</th>
+                        <th> Website Name </th>
+                        <th> Visit </th>
+                        <th> Delete </th>
+                       
+        
+                    </tr>
+        
+    
+                </thead>
+        
+                <tbody id="tableBody">
+
+
+                 
+                   
+                     
+                
+                </tbody>
+        
+        
+        
+        
+             </table>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="exampleModalLabel">  
+            
+            <div class="circles d-flex">
+                    
+                <span class="rounded-circle bg-danger me-2"></span>
+                <span class="rounded-circle bg-success me-2"></span>
+                <span class="rounded-circle bg-info me-2"></span>
+
+            </div>
+              
+          
+        
+        </h2>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+      
+            <div class="titlee fw-bold mb-3">
+
+                Site Name or Url is not valid, Please follow the rules below :
+
+            </div>
+
+
+            <ol class="list-unstyled">
+                <li>
+
+                    <i class="fa-regular fa-circle-right me-1"></i>
+                    
+                    Site name must contain at least 3 characters
+                
+                </li>
+
+                <li>
+                    <i class="fa-regular fa-circle-right me-1"></i>
+
+                    Site URL must be a valid one
+                
+                </li>
+
+          </ol>
+
+
+
+        </div>
+       
+
+      </div>
+    </div>
+  </div>
+
+
+        </div>
+ 
+        
+
+    </div>
+       
+   
+
+
+   </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

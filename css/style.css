@@ -1,0 +1,143 @@
+
+
+.bookmarking{
+  
+    background-color: rgba(0, 153, 204, 0.621);
+    min-height: 100vh;
+
+
+}
+
+h1{
+
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+     position: relative !important; 
+
+
+}
+
+.line{
+
+    color: #fd0808;
+    
+}
+
+
+
+h1::after{
+
+
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    left: 490px;
+    bottom: 10px;
+    background-color: #fe60c9;
+    transition: height 350ms;
+    z-index: -1;
+   
+
+
+}
+
+h1:hover::after{
+
+height: 50%;
+
+} 
+
+
+
+
+h2{
+
+
+    font-family: 'Righteous', sans-serif;
+    font-size: 25px;
+
+
+}
+
+
+
+
+.title{
+
+
+      background-image: linear-gradient(to right, #07f446, #d61010); 
+      background-clip: text;  
+      -webkit-text-fill-color:transparent;
+      
+    
+}
+
+.title i{
+
+    font-size: 20px;
+}
+
+.btnn button{
+
+    background-color: #140def;
+    padding: 10px 30px;
+    border: 1px solid #140def ;
+    color: white;
+    transition: all 1s;
+}
+
+
+.btnn button:hover{
+
+ background-color: rgba(255, 255, 255, 0.727);
+ border: 1px solid white ;
+ color: black;
+
+
+}
+
+#hintMessage{
+
+
+    position: relative;
+    bottom: 400px;
+    left: 500px;
+    padding-block: 30px;
+    padding-inline: 10px;
+    background-color: rgb(18, 18, 19);
+    font-family: 'Acme', sans-serif;
+
+}
+
+.modal-header{
+
+    border-bottom: none;
+}
+
+.circles span{
+
+
+    width: 20px;
+    height: 20px;
+}
+
+.titlee{
+
+    font-size: 20px;
+}
+
+ol i{
+
+
+    color: red;
+    font-size: 18px;
+}
+
+
+ol li{
+
+   font-size: 20px;
+
+}
+
